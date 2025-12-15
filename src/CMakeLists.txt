@@ -4,6 +4,10 @@ set(MINISPDLOG_SOURCES
     details/utils.cpp
     formatter.cpp
     patternformatter.cpp
+    logger.cpp
+    registry.cpp
+    asynclogger.cpp
+    details/threadpool.cpp
 )
 
 # 创建静态库

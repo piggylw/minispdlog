@@ -15,7 +15,8 @@ class PatternFormatter : public Formatter
 {
 public:
     // pattern 示例: "[%Y-%m-%d %H:%M:%S] [%t] [%l] [%n] [%F:%f:%P] %v"
-    explicit PatternFormatter(std::string pattern = "[%Y-%m-%d %H:%M:%S] [%t] [%l] [%n] [%F:%f:%P] %v");
+    //年 月 日 时 分 秒 线程ID 级别简称 级别全称 Logger名称 消息 源文件 源文件名 源代码行号
+    explicit PatternFormatter(std::string pattern = "[%Y-%m-%d %H:%M:%S] [%t] [%l] [%n] %v");
     ~PatternFormatter() override = default;
 
     //实现format接口

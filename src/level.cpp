@@ -60,6 +60,7 @@ level string2Level(const std::string &str)
     }
     return level::info;
 }
+
 bool logLevelEnabled(level loggerLevel, level msgLevel)
 {
     return msgLevel >= loggerLevel;

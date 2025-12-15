@@ -95,5 +95,7 @@ struct NullMutex
     void unlock() {}
 };
 
-}
-}
+using SinkPtr = std::shared_ptr<Sink>;
+
+}//sink
+}//minispdlog
