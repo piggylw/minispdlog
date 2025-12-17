@@ -87,6 +87,11 @@ public:
     void addCh(char ch){ m_str += ch; }
     void addStr(const std::string& str){ m_str += str; }
 
+    std::unique_ptr<PatternFormatter::FlagFormatter> clone() const override
+    {
+        return std::make_unique<AggregateFormatter>();
+    }
+
 private:
     std::string m_str;
 };
