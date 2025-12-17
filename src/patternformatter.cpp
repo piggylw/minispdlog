@@ -89,7 +89,7 @@ public:
 
     std::unique_ptr<PatternFormatter::FlagFormatter> clone() const override
     {
-        return std::make_unique<AggregateFormatter>();
+        return std::make_unique<AggregateFormatter>(m_str);
     }
 
 private:
